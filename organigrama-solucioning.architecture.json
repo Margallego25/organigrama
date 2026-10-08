@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Organigrama Solucioning — Septiembre 2026",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1380,
+      638
+    ],
+    "legend": {
+      "mode": "hidden"
+    }
+  },
+  "components": [
+    {
+      "id": "solucioning",
+      "type": "external",
+      "label": "Solucioning",
+      "pos": [
+        40,
+        286
+      ],
+      "size": [
+        190,
+        66
+      ]
+    },
+    {
+      "id": "roger",
+      "type": "cloud",
+      "label": "Dirección general",
+      "tag": "1 persona",
+      "pos": [
+        550,
+        12
+      ],
+      "size": [
+        190,
+        66
+      ]
+    },
+    {
+      "id": "ops",
+      "type": "external",
+      "label": "Operaciones",
+      "tag": "27 personas",
+      "pos": [
+        550,
+        86
+      ],
+      "size": [
+        190,
+        66
+      ]
+    },
+    {
+      "id": "rrhh",
+      "type": "frontend",
+      "label": "RRHH",
+      "tag": "8 personas",
+      "pos": [
+        550,
+        190
+      ],
+      "size": [
+        190,
+        66
+      ]
+    },
+    {
+      "id": "metrickal",
+      "type": "frontend",
+      "label": "Personal externo",
+      "sublabel": "Metrickal",
+      "tag": "4 personas",
+      "pos": [
+        1100,
+        190
+      ],
+      "size": [
+        190,
+        66
+      ]
+    },
+    {
+      "id": "finanzas",
+      "type": "backend",
+      "label": "Finanzas",
+      "tag": "2 personas",
+      "pos": [
+        550,
+        264
+      ],
+      "size": [
+        190,
+        66
+      ]
+    },
+    {
+      "id": "comercial",
+      "type": "messagebus",
+      "label": "Comercial",
+      "tag": "1 persona",
+      "pos": [
+        550,
+        338
+      ],
+      "size": [
+        190,
+        66
+      ]
+    },
+    {
+      "id": "proyectos",
+      "type": "frontend",
+      "label": "Proyectos",
+      "tag": "1 persona",
+      "pos": [
+        550,
+        412
+      ],
+      "size": [
+        190,
+        66
+      ]
+    },
+    {
+      "id": "it",
+      "type": "database",
+      "label": "IT",
+      "tag": "4 personas",
+      "pos": [
+        550,
+        486
+      ],
+      "size": [
+        190,
+        66
+      ]
+    },
+    {
+      "id": "sistemas",
+      "type": "security",
+      "label": "Sistemas y Seguridad",
+      "tag": "2 personas",
+      "pos": [
+        550,
+        560
+      ],
+      "size": [
+        190,
+        66
+      ]
+    }
+  ],
+  "boundaries": [],
+  "connections": [
+    {
+      "id": "solucioning-roger",
+      "from": "solucioning",
+      "to": "roger",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "solucioning-ops",
+      "from": "solucioning",
+      "to": "ops",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "solucioning-rrhh",
+      "from": "solucioning",
+      "to": "rrhh",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "solucioning-finanzas",
+      "from": "solucioning",
+      "to": "finanzas",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "solucioning-comercial",
+      "from": "solucioning",
+      "to": "comercial",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "solucioning-proyectos",
+      "from": "solucioning",
+      "to": "proyectos",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "solucioning-it",
+      "from": "solucioning",
+      "to": "it",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "solucioning-sistemas",
+      "from": "solucioning",
+      "to": "sistemas",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "rrhh-metrickal",
+      "from": "rrhh",
+      "to": "metrickal",
+      "fromSide": "right",
+      "toSide": "left"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "slate",
+      "title": "Resumen por área — septiembre 2026",
+      "items": [
+        "Dirección general: 1",
+        "Operaciones: 27",
+        "RRHH: 8",
+        "Personal externo Metrickal: 4",
+        "Finanzas: 2",
+        "Comercial: 1",
+        "Proyectos: 1",
+        "IT: 4",
+        "Sistemas y Seguridad: 2",
+        "Total activos: 50",
+        "Haz clic en un departamento del organigrama para ver su equipo, cargo, correo y cliente asignado."
+      ]
+    }
+  ]
+}
