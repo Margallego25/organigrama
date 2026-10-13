@@ -15079,7 +15079,11 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           var panel = document.getElementById('org-roster-panel');
           if (!dept || !panel) return;
           var showClient = deptKey === 'ops';
-          var rows = dept.people.map(function (p) {
+          var people = dept.people;
+          if (deptKey === 'rrhh' && roster.metrickal) {
+            people = people.concat(roster.metrickal.people);
+          }
+          var rows = people.map(function (p) {
             var name = escapeHtml(p[0]);
             var cargo = escapeHtml(p[1]);
             var email = p[2] && p[2] !== '—'
@@ -15096,7 +15100,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           }).join('');
           panel.innerHTML =
             buildHierarchyTree(deptKey) +
-            '<h3>' + escapeHtml(dept.label) + ' · ' + dept.people.length + ' persona' + (dept.people.length === 1 ? '' : 's') + '</h3>' +
+            '<h3>' + escapeHtml(dept.label) + ' · ' + people.length + ' persona' + (people.length === 1 ? '' : 's') + '</h3>' +
             '<p class="hint">Datos del organigrama — septiembre 2026.</p>' +
             '<table><thead><tr><th>Nombre</th><th>Cargo</th><th>Correo</th>' + (showClient ? '<th>Cliente</th>' : '') + '</tr></thead><tbody>' + rows + '</tbody></table>';
           panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
