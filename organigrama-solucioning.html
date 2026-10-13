@@ -15057,7 +15057,10 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
                 hierarchyBox('Área laboral', roster['rrhh-laboral'].people.length + ' personas'),
                 hierarchyBox('Resp. onboarding', onboardingName),
               ],
-              [hierarchyBox('Equipo onboarding', roster['rrhh-equipo-onboarding'].people.length + ' personas')],
+              [
+                hierarchyBox('Equipo onboarding', roster['rrhh-equipo-onboarding'].people.length + ' personas'),
+                hierarchyBox('Personal externo', roster['metrickal'].people.length + ' personas · Metrickal'),
+              ],
             ];
           } else {
             return '';
